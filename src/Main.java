@@ -1,11 +1,30 @@
 import javax.swing.*;
 import java.awt.geom.Ellipse2D;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.*;
 import java.awt.*;
 import javax.swing.JFrame;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Test port:");
+
+        /**
+         * Test big number types.
+         */
+        BigInteger n = new BigInteger("10000000");
+        BigInteger r = n.multiply(n);
+        System.out.println(r);
+
+        BigDecimal d = new BigDecimal("4.35");
+        BigDecimal e = new BigDecimal("100");
+        BigDecimal f = d.multiply(e);
+        System.out.println(f);
+
+        /**
+         * A simple drawing board.
+         */
         /*JFrame frame = new JFrame();
 
         frame.setSize(300,400);
@@ -17,14 +36,18 @@ public class Main {
 
         frame.setVisible(true);*/
 
-
-        String str = "Morning";
+        /**
+         * Test the reference property of String type in Java.
+         */
+        /*String str = "Morning";
         String str2 = "Morning";
         String str3 = new String("Adress");
         System.out.println(Integer.toHexString(str.hashCode()));
-        System.out.println(Integer.toHexString(str2.hashCode()));
+        System.out.println(Integer.toHexString(str2.hashCode()));*/
 
-
+        /**
+         * Date interval between the date of birth and the present time.
+         */
         /*int birthYr = 95;
         int birthMth = 1;
         int birthDy = 17;
