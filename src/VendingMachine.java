@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Scanner;
 
 /**
@@ -10,10 +11,17 @@ public class VendingMachine {
         final int PENNIES_PER_DOLLAR = 100;
         final int PENNIES_PER_QUARTER = 25;
 
-        System.out.print("Enter bill value (1 = $1 bill, 5 = $5 bill, etc.): ");
+        // Use input dialog box
+        String input1 = JOptionPane.showInputDialog("Enter bill value (1 = $1 bill, 5 = $5 bill, etc.): ");
+        int billValue = Integer.parseInt(input1);
+        String input2 = JOptionPane.showInputDialog("Enter item price in pennies: ");
+        int itemPrice = Integer.parseInt(input2);
+
+        // Basic input
+        /*System.out.print("Enter bill value (1 = $1 bill, 5 = $5 bill, etc.): ");
         int billValue = in.nextInt();
         System.out.print("Enter item price in pennies: ");
-        int itemPrice = in.nextInt();
+        int itemPrice = in.nextInt();*/
 
         // Compute change due
 
