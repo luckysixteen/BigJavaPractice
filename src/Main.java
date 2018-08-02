@@ -10,17 +10,24 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Test port:");
 
+        int bottleNumber = 8;
+        int cansNumber = 24;
+
+        System.out.printf("Bottles: %4d", bottleNumber);
+        System.out.println();
+        System.out.printf("Cans:    %4d", cansNumber);
+
         /**
          * Test big number types.
          */
-        BigInteger n = new BigInteger("10000000");
+        /*BigInteger n = new BigInteger("10000000");
         BigInteger r = n.multiply(n);
         System.out.println(r);
 
         BigDecimal d = new BigDecimal("4.35");
         BigDecimal e = new BigDecimal("100");
         BigDecimal f = d.multiply(e);
-        System.out.println(f);
+        System.out.println(f);*/
 
         /**
          * A simple drawing board.
