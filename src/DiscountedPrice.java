@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class DiscountedPrice {
 
     public static void main(String[] args) {
-        final double LOWDISCOUNT = 0.08;
-        final double HIGHDISCOUNT = 0.16;
+        final double LOW_DISCOUNT = 0.08;
+        final double HIGH_DISCOUNT = 0.16;
 
         Scanner in = new Scanner(System.in);
 
@@ -13,10 +13,10 @@ public class DiscountedPrice {
         double discountedPrice;
 
         if (originalPrice < 128) {
-            discountedPrice = originalPrice * (1 - LOWDISCOUNT);
+            discountedPrice = originalPrice * (1 - LOW_DISCOUNT);
         }
         else {
-            discountedPrice = originalPrice * (1 - HIGHDISCOUNT);
+            discountedPrice = originalPrice * (1 - HIGH_DISCOUNT);
         }
 
         System.out.printf("The discounted price is $%.2f", discountedPrice);
