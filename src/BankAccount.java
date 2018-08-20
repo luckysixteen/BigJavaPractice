@@ -5,9 +5,9 @@ public class BankAccount {
         balence = 0;
     }
 
-    public BankAccount (double initialBalence) {
-        balence = initialBalence;
-    }
+//    public BankAccount (double initialBalence) {
+//        balence = initialBalence;
+//    }
 
     public void deposit(double amount) {
         balence = balence + amount;
@@ -15,6 +15,13 @@ public class BankAccount {
 
     public void withdraw(double amount) {
         balence = balence - amount;
+    }
+
+    public void monthEnd() {
+        /**
+         * Gets the current balance of this bank account.
+         * @return the current balance
+         * */
     }
 
     public double getBalence() {
